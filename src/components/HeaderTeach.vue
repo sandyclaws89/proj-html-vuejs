@@ -1,7 +1,9 @@
 <template>
-    <div>
+<header class="flex">
+    <nav class="flex main-container">
 
-    </div>
+    </nav>
+</header>
 </template>
 
 <script>
@@ -52,6 +54,25 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
+header{
+    background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    nav{
+        height: 50px;
+        background-color: rebeccapurple;
+        justify-content: center;
+    }
+    .jumbotron{
+        
+        
+        justify-content: center;
+       
+        object-fit:fill
+    }
 
+}
 </style>
