@@ -116,9 +116,7 @@ header{
                 width: 50%;
                 height: 30px;
             }
-                
         }  
-        
     }
     
 
