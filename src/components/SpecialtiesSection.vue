@@ -1,17 +1,29 @@
 <template>
-<section class="flex our-specialties">
-    <div class="flex main-container">
-        <h2>
-            Our specialties
-        </h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima beatae doloremque.
-        </p>
-        <span></span>
-    </div>
+    <section>
+        <div class="flex title-box">
+            <div class="flex main-container">
+                <h2>
+                    Our specialties
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima      beatae doloremque.
+                </p>
+                    <span></span>
+            </div>
+        </div>
+        <div class="flex list main-container">
+            <ul>
+                <li>
+                    ciao
+                </li>
+                <li>
+                    ciua
+
+                </li>
+            </ul>
+        </div>
+    </section>
     
-</section>
- 
 </template>
 
 <script>
@@ -21,7 +33,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .our-specialties {
+    .title-box {
         justify-content: center;
         padding-top: 50px;
         align-items: center;
@@ -44,9 +56,15 @@ export default {
                 width: 50px;
                 border-radius: 40px;
                 border: solid orangered;
-                border-width: 2px;
-                
+                border-width: 2px;  
             }
+        }
+    }
+    .list{
+        align-items: center;
+        li{
+            display: inline;
+            padding: 10px;
         }
     }
 </style>
