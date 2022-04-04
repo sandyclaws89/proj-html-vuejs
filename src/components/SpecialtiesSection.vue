@@ -8,7 +8,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam minima      beatae doloremque.
                 </p>
-                    <span></span>
+                    <span class="orange-underline"></span>
             </div>
         </div>
         <div class="flex methods-box">
@@ -27,12 +27,37 @@
                 </ul>
         </div>
         </div>
-        <div class="flex interview box">
+        <div class="flex interview-box">
             <div class="flex main-container">
-                <div class="interview-slider">
-                     <img src="../assets/img/h1-blog-img-04.jpg" alt="">
+                <div class="flex interview-slider">
+                    <img src="../assets/img/h1-blog-img-04.jpg" alt="">
+
+                    <div class="jason-profile">
+                        <h2>
+                            Jason Bickford
+                        </h2>
+                        <h3>Founder and Executive Director</h3>
+                        <div class="orange-underline"></div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, modi repudiandae recusandae et reiciendis odit aliquam earum laborum quas aliquid similique commodi
+                        </p>
+                        <div class="flex sign-social-box">
+                            <div class="flex">
+                                <span>
+                                    IN
+                                </span>
+                                 <span>
+                                    F
+                                </span>
+                                 <span>
+                                    TW
+                                </span>
+                            </div>
+                            <span>JASON BICKFORD SIGNED</span>
+                        </div>
+                    </div>
+                    <img src="../assets/img/svg/svg-4.svg" alt="">
                 </div>
-                
             </div>             
         </div>    
     </section>
@@ -94,12 +119,6 @@ export default {
             p{
                 padding-bottom: 25px;
             }
-            span{
-                width: 50px;
-                border-radius: 40px;
-                border: solid orangered;
-                border-width: 2px;  
-            }
         }
     }
     .methods-box {
@@ -130,17 +149,52 @@ export default {
         }
     }
     .interview-box{
-        margin-top: 200px;
-        align-items: center;
-        // justify-content: center;
-        background-color: cadetblue;
+        padding-top: 150px;
+        justify-content: center;
+        // background-color: cadetblue;
         .interview-slider{
             justify-content: center;
-            padding-top: 200px;
+            align-items: center;
+            // padding-top: 200px;
             img{
-                width: 150px;
-                height: 150px;
+                width:calc(90vw/2);
+                height: 30rem;
             }
+            .jason-profile{
+                width: calc(90vw/2.5);
+                height: 20rem;
+                background-color: antiquewhite;
+                padding: 50px 25px;
+                margin-left: -100px;
+                z-index: 555;
+                h2{
+                    font-family: serif;
+                    font-size: 2rem;
+                }
+                h3{
+                    font-size: 1rem;
+                    padding: 10px 0;
+                    font-weight: 200;
+                }
+                p{
+                    padding: 15px 0;
+                }
+                .sign-social-box{
+                    background-color: aqua;
+                    width: 100%;
+                    height: 25px;
+                    justify-content: space-between;
+                    span{
+                        padding: 10px
+                    }
+                }
+            }
+            >:last-child{
+                width: calc(90vw/3);
+                margin-top: -200px;
+                margin-left: -225px;
+            }
+
         }
     }
 
