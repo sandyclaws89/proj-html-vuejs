@@ -10,8 +10,16 @@
           </p>
           <strong>READ MORE</strong>
       </div>
-      <div class="parameters">
-
+      <div class="parameters flex">
+          <div v-for="(element, index) in arrParameters" :key="index" class="parameter-card">
+              <div class="flex">
+                    <h3>{{element.parameter}}</h3>
+                    <strong>{{`${element.value}%`}}</strong>
+              </div>
+              <div class="bar">
+                  <!-- <div :style="width{{element}}"></div> -->
+              </div>
+          </div>
       </div>
   </section>
 </template>
@@ -19,7 +27,29 @@
 <script>
 export default {
     name: 'LeaderSection',
+    data() {
+        return{
+            arrParameters: [
+            {
+                parameter: 'Mentorship',
+                value: 78,
+            },
+            {
+                parameter: 'Education',
+                value: 95,
+            },
+            {
+                parameter: 'Learning',
+                value: 65,
+            },
+            {
+                parameter: 'Motivation',
+                value: 83,
+            },
 
+            ] 
+        }
+    }
 }
 </script>
 
@@ -48,9 +78,37 @@ section{
     }
 }
 .parameters{
+    flex-direction: column;
     width: calc(90vw /2);
     height: 120px;
     background-color: rebeccapurple;
+   
+    .parameter-card{
+        padding: 10px 0;
+        >:first-child{
+            justify-content: space-between;
+            font-family: serif;
+            h3{
+                font-family: serif;
+            }
+            strong{
+                font-family: serif;
+            }
+        }
+        .bar{
+            margin-top: 5px;
+            width:calc(90vw /2);
+            background-color: #e1e1e1;
+            height: 2px;
+            justify-content: space-between;
+
+            div{
+                width: 78%;
+                background-color: orangered;
+                height: 2px;
+            }
+        }
+    }
 }
   
 </style>
