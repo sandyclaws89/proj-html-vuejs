@@ -2,7 +2,10 @@
   <section class="flex">
       <div class="main-container flex">
           <div class="events-box">
-
+              <h2>
+                  Upcoming Events
+              </h2>
+              <EventCard/>
           </div>
           <!-- <img src="../assets/img/h1-img-09.jpg" alt=""> -->
       </div>
@@ -10,8 +13,12 @@
 </template>
 
 <script>
+import EventCard from './EventCard.vue'
 export default {
     name:'EventsSection',
+    components: {
+        EventCard
+    }
 }
 </script>
 
@@ -28,11 +35,13 @@ section{
             align-items: center;
         }
          .events-box{
-             width: 300px;
-             height: 60%;
-             background-color: chocolate;
-            //  padding-left: 25px;
-           
+            width: 300px;
+            height: 60%;
+            background-color: white;
+                h2{
+                    padding: 15px;
+                    border-bottom: solid #efefef;
+                }
         }
 }
    
