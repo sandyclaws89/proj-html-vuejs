@@ -11,28 +11,70 @@
                     <span></span>
             </div>
         </div>
-        <div class="flex list main-container">
-            <ul>
-                <li>
-                    ciao
-                </li>
-                <li>
-                    ciua
-
-                </li>
-            </ul>
+        <div class="flex methods-box">
+            <div class="flex main-container">
+                <ul class="flex">
+                    <li v-for="(method, index) in arrMethods" :key="index" class="flex">
+                        <div class="methods-text">
+                            <!-- FIXME:SISTEMA CARIAMENTO IMG  -->
+                            <img :src="method.img" :alt="title">
+                            <h3>
+                                {{method.title}}
+                            </h3>
+                            <span>{{method.text}}</span>
+                        </div>
+                    </li>
+                </ul>
         </div>
+        </div>
+        <div class="flex interview box">
+            <div class="flex main-container">
+                <div class="interview-slider">
+                     <img src="../assets/img/h1-blog-img-04.jpg" alt="">
+                </div>
+                
+            </div>             
+        </div>    
     </section>
     
 </template>
 
 <script>
 export default {
-    name: 'SpecialtiesSection'
+    name: 'SpecialtiesSection',
+    props: {
+        
+    },
+    data() {
+        return {
+            arrMethods: [
+                {         
+                    title: 'Knowing',
+                    text: 'lorem picsum lorem picsum lorem picsum lorem picsum',
+                    img:  '../assets/img/h1-img-01.jpg',
+                },
+                {         
+                    title: 'Selling',
+                    text: 'lorem',
+                    img:  '../assets/img/svg/svg-1.svg'
+                },
+                {         
+                    title: 'Learning',
+                    text: 'lorem picsum lorem picsum',
+                    img:  '../assets/img/svg/svg-2.svg' 
+                },
+                {         
+                    title: 'Contact',
+                    text: 'lorem picsum',
+                    img:  '../assets/img/svg/svg-3.svg' 
+                },
+            ]
+        }
+    }
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
     .title-box {
         justify-content: center;
         padding-top: 50px;
@@ -60,11 +102,48 @@ export default {
             }
         }
     }
-    .list{
-        align-items: center;
-        li{
-            display: inline;
-            padding: 10px;
+    .methods-box {
+        padding-top:50px ;
+        justify-content: center;
+        // width: 100%;
+        ul{
+            width: 100%;
+            li{
+                width: calc(90vw/4);
+                justify-content: center;
+                text-align: center;
+                    .methods-text{
+                        img{
+                            display: block;
+                            width: 150px;
+                            height: 150px;
+                        }
+                       
+                        h3{
+                            display: inline;
+                        }
+                        span{
+                            display: block;
+                        }
+                    }
+            }
         }
     }
+    .interview-box{
+        margin-top: 200px;
+        align-items: center;
+        // justify-content: center;
+        background-color: cadetblue;
+        .interview-slider{
+            justify-content: center;
+            padding-top: 200px;
+            img{
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+
+    
+    
 </style>
