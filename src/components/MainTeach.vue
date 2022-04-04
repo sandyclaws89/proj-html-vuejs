@@ -1,11 +1,13 @@
 <template>
   <main>
     <SpecialtiesSection/>
+    <EventsSection/>
   </main>
 </template>
 
 <script>
 import SpecialtiesSection from './SpecialtiesSection.vue'
+import EventsSection from './EventsSection.vue'
 
 export default {
     name: 'MainTeach',
@@ -15,7 +17,8 @@ export default {
       }
     },
     components: {
-      SpecialtiesSection
+      SpecialtiesSection,
+      EventsSection,
     }
 
 }

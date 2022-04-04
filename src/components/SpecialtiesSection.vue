@@ -16,7 +16,7 @@
                 <ul class="flex">
                     <li v-for="(method, index) in arrMethods" :key="index" class="flex">
                         <div class="methods-text">
-                            <!-- FIXME:SISTEMA CARIAMENTO IMG  -->
+                            <!-- FIXME:SISTEMA CARICAMENTO IMG  -->
                             <img :src="method.img" :alt="title">
                             <h3>
                                 {{method.title}}
