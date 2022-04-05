@@ -3,6 +3,7 @@
     <SpecialtiesSection/>
     <EventsSection/>
     <LeaderSection/>
+    <NewsSection/>
   </main>
 </template>
 
@@ -10,6 +11,7 @@
 import SpecialtiesSection from './SpecialtiesSection.vue'
 import EventsSection from './EventsSection.vue'
 import LeaderSection from './LeaderSection.vue'
+import NewsSection from './NewsSection.vue'
 
 export default {
     name: 'MainTeach',
@@ -22,6 +24,7 @@ export default {
       SpecialtiesSection,
       EventsSection,
       LeaderSection,
+      NewsSection
     }
 
 }

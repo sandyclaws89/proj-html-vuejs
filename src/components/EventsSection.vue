@@ -42,7 +42,7 @@ export default {
                     date: ['11', 'apr','2022'],
                 },
                  {
-                    event:'Melbourne Coaching',
+                    event:'London Coaching',
                     hours: '9:00 am - 5:00pm, jan 7, 2022',
                     place: 'Cambridge, MA 02138, USA',
                     date: ['21', 'dec','2022'],

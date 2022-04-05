@@ -29,6 +29,7 @@ export default {
     name: 'LeaderSection',
     data() {
         return{
+            // TODO:RIVEDERE I MIXIN PER PASSARE I VALORI DELLA PERCENTUALE IN SCSS 
             arrParameters: [
             {
                 parameter: 'Mentorship',
@@ -81,7 +82,7 @@ section{
     flex-direction: column;
     width: calc(90vw /2);
     height: 120px;
-    background-color: rebeccapurple;
+    // background-color: rebeccapurple;
    
     .parameter-card{
         padding: 10px 0;
