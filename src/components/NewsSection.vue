@@ -13,6 +13,7 @@
             :news-img = news.img
             :news-data = news.data
             :news-author = news.author
+            :news-category = news.category
             :news-title = news.name
             :news-content = news.content
             :news-other = news.other
@@ -34,7 +35,7 @@ export default {
             arrNews:[
                 {
                     name:'Next investment',
-                    content:'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa',
+                    content:'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum v lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum v lorem ipsum',
                     img: '../assets/img/h1-blog-img-02.jpg',
                     data: 'May 5, 2019',
                     author: 'Amanda Doe',
@@ -43,7 +44,7 @@ export default {
                 },
                 {
                     name:'Team Building',
-                    content:'bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb',
+                    content:'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum v lorem ipsum',
                     img: '../assets/img/h1-blog-img-03.jpg',
                     data: 'Gen 15, 2018',
                     author: 'John Black',
@@ -52,7 +53,7 @@ export default {
                 },
                  {
                     name:'New Business Day',
-                    content:'ccccccccccccccccccccccccccc',
+                    content:'lorem ipsum lorem ipsum ',
                     img: '../assets/img/h1-blog-img-01.jpg',
                     data: 'ago 31, 2021',
                     author: 'Frederic Terry',
@@ -68,11 +69,12 @@ export default {
 
 <style lang="scss" scoped>
     section{
+        z-index: 999;
         img{
             left: 70px;
         }
         .title-news{
-            margin-top: -150px;
+            margin-top: -250px;
             flex-direction: column;
             align-items: center;
             // background-color: blue;
