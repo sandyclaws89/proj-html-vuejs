@@ -12,6 +12,7 @@ export default {
 
 <style lang='scss' scoped>
     section{
+        margin-top: 0;
         height: 90vh;
         background-image: url('../assets/img/h1-img-04.jpg');
         background-size: cover;

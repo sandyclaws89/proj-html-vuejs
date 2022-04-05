@@ -6,6 +6,7 @@
     <NewsSection/>
     <TestimonialsSection/>
     <VideoSection/>
+    <ContactSection/>
   </main>
 </template>
 
@@ -16,6 +17,7 @@ import LeaderSection from './LeaderSection.vue'
 import NewsSection from './NewsSection.vue'
 import TestimonialsSection from './TestimonialsSection.vue'
 import VideoSection from './VideoSection.vue'
+import ContactSection from './ContactSection.vue'
 export default {
     name: 'MainTeach',
     data() {
@@ -29,7 +31,8 @@ export default {
       LeaderSection,
       NewsSection,
       TestimonialsSection,
-      VideoSection
+      VideoSection,
+      ContactSection
     }
 
 }
