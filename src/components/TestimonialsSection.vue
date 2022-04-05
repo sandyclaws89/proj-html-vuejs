@@ -1,13 +1,17 @@
 <template>
   <section class="banner flex">
+   
+    
     <span>Testimonials</span>
+    
       <TestimonialsCard
         v-for="(testimonial, index) in arrTestimonials"
         :key="index"
         :testimonial-name = testimonial.name
         :testimonial-text = testimonial.testimonial
-        :testimonial-img = testimonial.img  
+        :testimonial-img = testimonial.img   
       />
+   
   </section>
 </template>
 
@@ -55,6 +59,9 @@ export default {
       font-size: 15rem;
       font-family: serif;
       line-height: 12rem;
+    }
+    .icn{
+      align-self: center;
     }
     
   }
