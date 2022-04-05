@@ -4,6 +4,7 @@
     <EventsSection/>
     <LeaderSection/>
     <NewsSection/>
+    <TestimonialsSection/>
   </main>
 </template>
 
@@ -12,6 +13,7 @@ import SpecialtiesSection from './SpecialtiesSection.vue'
 import EventsSection from './EventsSection.vue'
 import LeaderSection from './LeaderSection.vue'
 import NewsSection from './NewsSection.vue'
+import TestimonialsSection from './TestimonialsSection.vue'
 
 export default {
     name: 'MainTeach',
@@ -24,13 +26,15 @@ export default {
       SpecialtiesSection,
       EventsSection,
       LeaderSection,
-      NewsSection
+      NewsSection,
+      TestimonialsSection
     }
 
 }
 </script>
 
-<style lang="scss" scoped>
+<style>
+    
 main{
   margin-bottom: 150px;
 }
