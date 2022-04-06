@@ -20,12 +20,45 @@
                 <span>ICN</span>
             </button>
       </div>
+      <div class=" flex logos-box">
+          <ul>
+              <li v-for="logo in arrLogos" :key="logo.index">
+                  <img :src="logo.img" :alt="`img n ${logo.index}`">
+              </li>
+          </ul>
+      </div>
   </section>
 </template>
 
 <script>
 export default {
-    name: 'ContactSection'
+    name: 'ContactSection',
+    data() {
+        return {
+            arrLogos: [
+                {
+                    index:0,
+                    img:'../assets/img/h4-clients-img-04-1.png',
+                },
+                {
+                    index:1,
+                    img:'../assets/img/h4-clients-img-06-1.png',
+                },
+                {
+                    index:2,
+                    img:'../assets/img/h4-clients-img-08-1.png',
+                },
+                {
+                    index:3,
+                    img:'../assets/img/h4-clients-img-10-1.png',
+                },
+                {
+                    index:4,
+                    img:'../assets/img/h4-clients-img-02.png',
+                },
+            ]
+        }
+    }
 }
 </script>
 
@@ -33,8 +66,7 @@ export default {
     section{
         justify-content: center;
         align-items: center;
-        /* margin: 0 20px; */
-       
+        flex-wrap: wrap;
         .map{
             width: 50%;
             /* background-color: red; */
@@ -87,6 +119,21 @@ export default {
                     height: 40px;
                     width: 1px;
                     background-color: white;
+                }
+            }
+        }
+        .logos-box{
+            justify-content: center;
+            width: 100%;
+            margin-top: 100px;
+            li{
+                display: inline-block;
+                /* flex-grow: 1; */
+                img{
+                    width: 50px;
+                    height: 50px;
+                    background-color: antiquewhite;
+                    padding: 0 20px;
                 }
             }
         }
