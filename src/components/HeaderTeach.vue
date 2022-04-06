@@ -2,14 +2,20 @@
 <!--TODO:FARE LO SLIDE -->
 <!-- eslint-disable -->
 
-<header class="flex">
+<header class="flex" id="slide">
     <!-- <div class="slide1 slide2"> -->
 
     
     <nav class="flex main-container">
         <img src="../assets/img/logo-img-01.png" alt="">
         <ul>
-            <li v-for="(category, index) in arrHeaderNav" :key="index">{{category.categories}}</li>
+            <li v-for="(category, index) in arrHeaderNav" :key="index"
+                @mouseover="this.hover = true"
+                @mouseleave="this.hover = false"
+                :class="{ orange: hover }">
+                {{category.categories}}
+                </li>
+
             <li>ICN</li> <!--TODO:CERCA SVG -->
             <li>ICN</li> <!--TODO:CERCA SVG -->
         </ul>
@@ -40,6 +46,7 @@ export default {
     name:'HeaderTeach',
     data() {
         return {
+            hover: false,
             arrHeaderNav: [
                 {
                     categories: 'HOMES',
@@ -81,11 +88,14 @@ export default {
         }
     },
     methods: {
+    //    this.$ref.input
+    // document.body.getElementById('slide')
     SlideHeader (img) {
 	document.header.style.backgroundImage = `url(${img})`;
-    document.header.style.backgroundColor= 'red';
-
     },
+    ChangeColor(){
+        document.li
+    }
     },
 }
 </script>
@@ -124,6 +134,10 @@ header{
             display: inline; 
             padding: 0 15px;
             font-weight: 500;
+            // color: orangered;
+            .orange{
+                color: orangered;
+            }
         }
     }
 
