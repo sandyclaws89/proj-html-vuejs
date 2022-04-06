@@ -1,7 +1,9 @@
 <template>
 <!--TODO:FARE LO SLIDE -->
-<header class="flex slide1 slide2">
-    <div class="slide1 slide2">
+<!-- eslint-disable -->
+
+<header class="flex">
+    <!-- <div class="slide1 slide2"> -->
 
     
     <nav class="flex main-container">
@@ -14,7 +16,7 @@
     </nav>
     <section class="main-container flex jumbotron">
         <!--TODO:SISTEMA BENE STILE -->
-        <span>ICONS</span>
+        <button @click="SlideHeader('../assets/img/rev-slider-main-home-img-02.jpg')">LEFT</button>
         <div>
             <h1>
                 Our team
@@ -26,13 +28,14 @@
             <button>PURCHASE</button>
         </div>
        
-        <span>ICONS</span>
+        <button>RIGHT</button>
     </section>
-    </div>
+    <!-- </div> -->
 </header>
 </template>
 
 <script>
+// eslint-disable
 export default {
     name:'HeaderTeach',
     data() {
@@ -76,13 +79,19 @@ export default {
                 },
             ]
         }
-    }
+    },
+    methods: {
+        SlideHeader (img) {
+	        // eslint-disable-next-line
+	        document.header.style.backgroundImage=`url(${img})`;
+        },
+    },
 }
 </script>
 
 <style lang="scss" scoped>
 header{
-    // background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
+    background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
     // background-color: darkblue;
     justify-content: center;
     height: 90vh;
@@ -92,13 +101,16 @@ header{
         // height: 90vh;
         background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
         width: 100%;
-        display: block;
+        // display: block;
+        // overflow: hidden;
         // background-color: brown;
         // z-index: 999999999999999999999999;
     }
     .slide2{
         background-image: url('../assets/img/rev-slider-main-home-img-02.png');
-        // display: none;
+        // opacity: 0;
+        // overflow: hidden;
+
     }
     nav{
         height: 50px;
