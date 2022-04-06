@@ -82,7 +82,9 @@ export default {
     },
     methods: {
     SlideHeader (img) {
-	document.header.style.backgroundImage=`url('${img}')`;
+	document.header.style.backgroundImage = `url(${img})`;
+    document.header.style.backgroundColor= 'red';
+
     },
     },
 }
