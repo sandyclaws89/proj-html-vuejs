@@ -81,10 +81,9 @@ export default {
         }
     },
     methods: {
-        SlideHeader (img) {
-	        // eslint-disable-next-line
-	        document.header.style.backgroundImage=`url(${img})`;
-        },
+    SlideHeader (img) {
+	document.header.style.backgroundImage=`url('${img}')`;
+    },
     },
 }
 </script>
