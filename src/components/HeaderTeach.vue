@@ -1,6 +1,9 @@
 <template>
 <!--TODO:FARE LO SLIDE -->
-<header class="flex">
+<header class="flex slide1 slide2">
+    <div class="slide1 slide2">
+
+    
     <nav class="flex main-container">
         <img src="../assets/img/logo-img-01.png" alt="">
         <ul>
@@ -25,6 +28,7 @@
        
         <span>ICONS</span>
     </section>
+    </div>
 </header>
 </template>
 
@@ -78,11 +82,24 @@ export default {
 
 <style lang="scss" scoped>
 header{
-    background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
+    // background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
+    // background-color: darkblue;
     justify-content: center;
     height: 90vh;
     background-position: center;
     flex-wrap: wrap;
+    .slide1{
+        // height: 90vh;
+        background-image: url('../assets/img/rev-slider-main-home-img-03.jpg');
+        width: 100%;
+        display: block;
+        // background-color: brown;
+        // z-index: 999999999999999999999999;
+    }
+    .slide2{
+        background-image: url('../assets/img/rev-slider-main-home-img-02.png');
+        // display: none;
+    }
     nav{
         height: 50px;
         justify-content: space-between;

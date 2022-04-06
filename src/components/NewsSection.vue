@@ -36,7 +36,7 @@ export default {
                 {
                     name:'Next investment',
                     content:'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum v lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum v lorem ipsum',
-                    img: '../assets/img/h1-blog-img-02.jpg',
+                    img: '@/public/h1-blog-img-02.jpg',
                     data: 'May 5, 2019',
                     author: 'Amanda Doe',
                     category: 'Business Leading', 
